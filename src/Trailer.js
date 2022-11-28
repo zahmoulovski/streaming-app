@@ -13,7 +13,7 @@ const Trailer = () => {
       <h1>{filmID.title}</h1>
       <div><YtModal/>   <StreamingModal/></div>
       <p className="description">{filmID.description}</p>
-      <iframe src={`https://sblongvu.com/e/${filmID.code}.html`} frameBorder={0} marginWidth={0} marginHeight={0} scrolling="no" width={640} height={360} allowFullScreen />
+      {/* <p>{filmID.season.SOI}</p><p>{filmID.season.SOII}</p> */}
     </container>
   )
 }

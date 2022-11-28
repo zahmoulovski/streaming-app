@@ -23,16 +23,13 @@ export default function Filtring({filter}) {
     return (
             <div>
                 <form className="Filterform" onChange={submitted}>
-                    <h2>Filter</h2>
                     <input ref={searchRef} className="form-control form-control-lg searchinp" type="text" placeholder="Search for film..." />
                     <ReactStars count={10}
                             onChange={ratingChanged}
                             size={20}
                             isHalf={true}
                             activeColor="#ffd700"/>
-                            <button onclick="{refreshPage}" className="btn btn-primary" type="submit" style={{width:"100px"}}>Reset</button>
-
-                            
+                            <button onclick="{refreshPage}" className="btn btn-primary" type="submit" style={{width:"100px"}}>Reset</button>  
                 </form> 
             </div>
         );
