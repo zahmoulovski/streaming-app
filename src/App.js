@@ -5,6 +5,7 @@ import NavBar from './Navbar'
 import Trailer from './Trailer'
 import Movie from './Components/movie/Movie'
 import Tvshow from './Components/tvshow/Tvshow'
+import Stream from './Stream'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
             <Route path='/movie' element={<Movie/>}/>
             <Route path='/tvshow' element={<Tvshow/>}/>
             <Route path='/trailer/:id' element={<Trailer/>}/>
+            <Route path='/watch/:id' element={<Stream/>}/>
         </Routes>
         
     </div>

@@ -15,7 +15,8 @@ export default function MovieCard({ele}) {
                                     <h2 className="title">{ele.title}</h2>
                                     <p className="genre">{ele.year} - {ele.genre}</p>
                                     <p className="spanRate"><span className="rate"> Rate : </span>{ele.rating}</p>
-                                    <Link to={`/trailer/${ele.id}`} ><a className="btn btn-outline-light">Watch tailer</a></Link>
+                                    <Link to={`/trailer/${ele.id}`} ><a className="btn btn-outline-light">Tailer</a></Link>
+                                    <Link to={`/watch/${ele.id}`} ><a className="btn btn-outline-light">Watch</a></Link>
                                 </div>
                             </div>
                         </div>
