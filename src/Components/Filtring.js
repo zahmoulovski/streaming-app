@@ -1,36 +1,22 @@
 import "./styles.css";
-import ReactStars from "react-rating-stars-component";
-import React,{useRef,useState} from "react";
+import React,{useRef} from "react";
 
 export default function Filtring({filter}) {
     let searchRef = useRef();
-    const [rate, setRate] = useState(0);
-
-    const ratingChanged = (newRating) => {
-         filter(searchRef.current.value,newRating);
-        setRate(newRating)
-    };
-
     function submitted(ev){
         ev.preventDefault();
-        filter(searchRef.current.value,rate);
+        filter(searchRef.current.value);
     }
-
     function refreshPage() {
         window.location.reload(true);
       }
 
     return (
-            <div>
-                <form className="Filterform" onChange={submitted}>
-                    <input ref={searchRef} className="form-control form-control-lg searchinp" type="text" placeholder="Search for film..." />
-                    <ReactStars count={10}
-                            onChange={ratingChanged}
-                            size={20}
-                            isHalf={true}
-                            activeColor="#ffd700"/>
-                            <button onclick="{refreshPage}" className="btn btn-primary" type="submit" style={{width:"100px"}}>Reset</button>  
-                </form> 
-            </div>
+        <div>
+            <form className="Filterform" onChange={submitted}>
+                <input ref={searchRef} className="form-control form-control-lg searchinp" type="text" placeholder="Search for film..." />
+                <button onclick="{refreshPage}" className="btn btn-primary" type="submit" style={{width:"100px"}}>Reset</button>  
+            </form> 
+        </div>
         );
     }

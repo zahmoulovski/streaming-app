@@ -5,24 +5,22 @@ import { info } from './Data.js';
 import "./styles.css";
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
 import Toast from 'react-bootstrap/Toast';
 
 function HomeApp(){
   
   const [list,setList] = useState(info);
   const [filterVideos, setfilterVideos] = useState(list);
-  const [rate,setRate] = useState(0);
   const [keyword, setKeyword] = useState("");
-  const [showA, setShowA] = useState(true);
+  const [showA, setShowA] = useState(false);
   const toggleShowA = () => setShowA(!showA);
 
-  function filter(key, rate){
+  function filter(key){
     setKeyword(key);
-    setRate(rate);
-    setfilterVideos(list.filter( (element)=>{ return ( (element.title.toLowerCase().includes(key.toLowerCase())) && (element.rating >= rate)  ) } ));
+
+    setfilterVideos(list.filter( (element)=>{ return ( (element.title.toLowerCase().includes(key.toLowerCase())) && (element.rating)  ) } ));
   }
-  useEffect(()=>{ filter(keyword,rate); },[list]);
+  useEffect(()=>{ filter(keyword); },[list]);
 
   return(
     <div>

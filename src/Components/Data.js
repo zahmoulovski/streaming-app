@@ -12,7 +12,7 @@ export const info = [
   {code: '6h60ntc0hncz',background: "/image/fanart/bg.jpg",id: "roman-empire",year: "2023",genre: "TV Show", title:'Roman Empire', img:'/image/Roman Empire.jpg', description:"Chronicles some of the most famous leaders of the Roman Civilization.", trailer:"_erVOAbz420", rating:10 },
   {code: '6h60ntc0hncz',background: "/image/fanart/bg.jpg",id: "star-wars",year: "2023",genre: "Movie",img:"/image/Star Wars The Rise Of Skywalker.jpg",rating: 5,title: "Star Wars: The Rise Of Skywalker",description:"The surviving members of the resistance face the First Order once again",trailer:"_erVOAbz420"},
   {code: '6h60ntc0hncz',background: "/image/fanart/bg.jpg",id: "the-expanse",year: "2023",genre: "TV Show", title:'The Expanse', img:'/image/The Expanse.jpg', description:"In the 24th century, a disparate band of antiheroes unravel a vast conspiracy that threatens the Solar System's fragile state of cold war.", trailer:"_erVOAbz420", rating:8.5 },
-  {code: '6h60ntc0hncz',background: "/image/fanart/bg.jpg",id: "the-walking-dead",year: "2023",genre: "TV Show", title:'The Walking Dead', img:'/image/The Walking Dead.jpg', description:"Police officer (Rick) wakes up from a coma in which he was in for several months as a result of being shot while on the job.", trailer:"_erVOAbz420", rating:8.2 },
+  {code: 'p30kkufw84t8',background: "/image/fanart/bg.jpg",id: "the-walking-dead",year: "2023",genre: "TV Show", title:'The Walking Dead', img:'/image/The Walking Dead.jpg', description:"Police officer (Rick) wakes up from a coma in which he was in for several months as a result of being shot while on the job.", trailer:"_erVOAbz420", rating:8.2 },
 ];
 
 export const movie = [
