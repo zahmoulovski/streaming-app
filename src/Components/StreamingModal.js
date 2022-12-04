@@ -2,12 +2,13 @@ import React from 'react';
 import {useParams} from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import {info} from './Data';
+import {info} from './data/Data';
 import Streaming from './Streaming';
 
 function MyVerticallyCenteredModal(props) {
   const {id}=useParams()
   const filmID=info.find((e)=>e.id==id)
+
   return (
     <Modal
       {...props}

@@ -10,14 +10,16 @@ export default function MovieCard({ele}) {
                 <div className="row">
                     <div className="col-12">
                         <div className="card-deck">
-                            <div className="card text-white"><img className="poster" width="250px" height="360px" src={ele.img} alt="Poster" />
-                                <div className="card-img-overlay">
+                        <Link to={`/watch/${ele.id}`} >
+                            <div className="card text-white"><img className="poster" src={ele.img} alt="Poster" />
+                                <div className="card-img-overlay card-text">
                                     <h2 className="title">{ele.title}</h2>
                                     <p className="genre">{ele.year} - {ele.genre}</p>
-                                    <p className="spanRate"><span className="rate"> Rate : </span>{ele.rating}</p>
-                                    <Link to={`/trailer/${ele.id}`} ><a className="btn btn-outline-light">Watch tailer</a></Link>
+                                    <p className="spanRate">{ele.rating} ⭐</p>
+                                    <Link to={`/trailer/${ele.id}`} ><a className="btn btn-outline-light">Tailer</a></Link>
+                                    {/* <a className="btn btn-outline-light">Watch</a> */}
                                 </div>
-                            </div>
+                            </div></Link>
                         </div>
                     </div>
                 </div>

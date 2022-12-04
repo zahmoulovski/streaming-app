@@ -2,7 +2,7 @@ import React from 'react';
 import {useParams} from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import {info} from './Data';
+import {info} from './data/Data';
 import YoutubeEmbed from './YoutubeID';
 
 function MyVerticallyCenteredModal(props) {

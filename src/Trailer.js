@@ -1,10 +1,11 @@
 import React from 'react';
 import {useParams} from 'react-router-dom';
-import { info } from './Components/Data';
+import { info } from './Components/data/Data';
 import YtModal from './Components/YtModal';
 
 const Trailer = () => {
   const {id}=useParams()
+  // eslint-disable-next-line
   const filmID=info.find((e)=>e.id==id)
   return (
     <container className='trailer' style={{ backgroundImage: `url(${filmID.background})` }}>

@@ -34,3 +34,87 @@ export const tvshow = [
   {code: "6h60ntc0hncz",background: "/image/fanart/bg.jpg",id: "the-expanse",year: "2023",genre: "TV Show", title:'The Expanse', img:'/image/The Expanse.jpg', description:"In the 24th century, a disparate band of antiheroes unravel a vast conspiracy that threatens the Solar System's fragile state of cold war.", trailer:"_erVOAbz420", rating:8.5 },
   {code: "6h60ntc0hncz",background: "/image/fanart/bg.jpg",id: "the-walking-dead",year: "2023",genre: "TV Show", title:'The Walking Dead', img:'/image/The Walking Dead.jpg', description:"Police officer (Rick) wakes up from a coma in which he was in for several months as a result of being shot while on the job.", trailer:"_erVOAbz420", rating:8.2 },
 ];
+
+
+
+
+export const data = [
+  {
+    id: 1,
+    image: "/image/The Expanse.jpg",
+    imageBg: "/image/The Walking Dead.jpg",
+    title: "1983"
+  },
+  {
+    id: 2,
+    image: "/image/The Expanse.jpg",
+    imageBg: "/image/The Walking Dead.jpg",
+    title: "Russian doll"
+  },
+  {
+    id: 3,
+    image: "/image/The Expanse.jpg",
+    imageBg: "/image/The Walking Dead.jpg",
+    title: "The rain"
+  },
+  {
+    id: 4,
+    image: "/image/The Expanse.jpg",
+    imageBg: "/images/slide4b.webp",
+    title: "Sex education"
+  },
+  {
+    id: 5,
+    image: "/image/The Expanse.jpg",
+    imageBg: "/image/The Walking Dead.jpg",
+    title: "Elite"
+  },
+  {
+    id: 6,
+    image: "/image/The Expanse.jpg",
+    imageBg: "/image/The Walking Dead.jpg",
+    title: "Black mirror"
+  },
+  {
+    id: 7,
+    image: "/image/The Expanse.jpg",
+    imageBg: "/image/The Walking Dead.jpg",
+    title: "1983"
+  },
+  {
+    id: 8,
+    image: "/image/The Expanse.jpg",
+    imageBg: "/image/The Walking Dead.jpg",
+    title: "1983"
+  },
+  {
+    id: 9,
+    image: "/image/The Expanse.jpg",
+    imageBg: "/image/The Walking Dead.jpg",
+    title: "1983"
+  },
+  {
+    id: 10,
+    image: "/image/The Expanse.jpg",
+    imageBg: "/image/The Walking Dead.jpg",
+    title: "1983"
+  },
+  {
+    id: 11,
+    image: "/image/The Expanse.jpg",
+    imageBg: "/image/The Walking Dead.jpg",
+    title: "1983"
+  },
+  {
+    id: 12,
+    image: "/image/The Expanse.jpg",
+    imageBg: "/image/The Walking Dead.jpg",
+    title: "1983"
+  },
+  {
+    id: 13,
+    image: "/image/The Expanse.jpg",
+    imageBg: "/image/The Walking Dead.jpg",
+    title: "1983"
+  },
+];

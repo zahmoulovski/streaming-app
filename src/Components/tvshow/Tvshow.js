@@ -1,11 +1,10 @@
 import React, {useState,useEffect} from 'react';
 import MovieList from './MovieList';
-import Filtring from '../Filtring.js';
-import { tvshow } from '../Data.js';
+import Filtring from '../search/Filtring.js';
+import { tvshow } from '../data/Data';
 import "../styles.css";
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
 import Toast from 'react-bootstrap/Toast';
 
 function Movie(){
@@ -14,7 +13,7 @@ function Movie(){
   const [filterVideos, setfilterVideos] = useState(list);
   const [rate,setRate] = useState(0);
   const [keyword, setKeyword] = useState("");
-  const [showA, setShowA] = useState(true);
+  const [showA, setShowA] = useState(false);
   const toggleShowA = () => setShowA(!showA);
 
   function filter(key, rate){
@@ -26,7 +25,7 @@ function Movie(){
 
   return(
     <div>
-      <Col md={4} className="mb-2">
+      {/* <Col md={4} className="mb-2">
         <Button onClick={toggleShowA} className="mb-2">
           Filter
         </Button>
@@ -37,7 +36,7 @@ function Movie(){
           </Toast.Header>
           <Toast.Body><Filtring filter={filter}/></Toast.Body>
         </Toast>
-      </Col>
+      </Col> */}
       <MovieList list={filterVideos} />
     </div>
       );

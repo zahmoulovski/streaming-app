@@ -22,6 +22,11 @@ const NavBar = () => {
             TV Show
         </li>
         </Link>
+        <Link to="/search">
+          <li>
+          🔍
+          </li>
+        </Link>
         <li>
         <DarkModeToggle/>
         </li>
