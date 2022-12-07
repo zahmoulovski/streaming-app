@@ -2,6 +2,7 @@ import React from 'react';
 import {useParams} from 'react-router-dom';
 import { info } from './Components/data/Data';
 import Streaming from './Components/Streaming';
+import YtModal from './Components/YtModal';
 
 const Stream = () => {
   const {id}=useParams()
@@ -15,7 +16,8 @@ const Stream = () => {
       <h1>{filmID.title}</h1>
       <p className="description">{filmID.description}</p>
     </div>
-    <div className='rightSide'><Streaming code={filmID.code} /></div>
+    
+    <div className='rightSide'><div><YtModal/></div><Streaming code={filmID.code} /></div>
     </container>
   )
 }

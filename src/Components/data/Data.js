@@ -1,21 +1,29 @@
+// {
+//   id: "1",
+//   title: "Maleficent",
+//   slug: "maleficent",
+//   streamingCode: "6h60ntc0hncz",
+//   poster: "/image/Maleficent.jpg",
+//   background: "/image/fanart/bg.jpg",
+//   genre: "Movie",
+//   year: "2023",
+//   runtime:"2h11m",
+//   rating: 4,
+//   description:
+//     "A vengeful fairy curses an infant princess, but that child may be the one person who can restore peace to their troubled land.",
+//   trailer: "https://www.youtube.com/watch?v=H5sZnSFfMos",
+// },
+
+
+
+
 export const info = [
   {
-    code: "rjjt2bq25n2e",
-    background: "/image/fanart/bg1.jpg",
-    id: "chernobyl",
-    year: "2023",
-    genre: "TV Show",
-    title: "Chernobyl",
-    img: "/image/Chernobyl.jpg",
-    description:
-      "The events recount the circumstances of the explosion of the Chernobyl nuclear reactor in April 1986 in the Soviet Socialist Union, which became one of the worst human disasters in the twentieth century.",
-    trailer: "_erVOAbz420",
-    rating: 9.4,
-  },
-  {
+    id: "1",
     code: "6h60ntc0hncz",
     background: "/image/fanart/bg.jpg",
-    id: "maleficent",
+    slug: "maleficent",
+    runtime:"2h11m",
     year: "2023",
     genre: "Movie",
     img: "/image/Maleficent.jpg",
