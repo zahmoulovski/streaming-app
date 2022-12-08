@@ -1,0 +1,131 @@
+"seasons": [
+    {
+      "air_date": "1965-07-22",
+      "episode_count": 5,
+      "id": 1692,
+      "name": "Specials",
+      "overview": "",
+      "poster_path": null,
+      "season_number": 0
+    },
+    {
+      "air_date": "1966-06-06",
+      "episode_count": 7,
+      "id": 1690,
+      "name": "Series 1",
+      "overview": "",
+      "poster_path": null,
+      "season_number": 1
+    },
+    {
+      "air_date": "1966-12-26",
+      "episode_count": 10,
+      "id": 1688,
+      "name": "Series 2",
+      "overview": "",
+      "poster_path": null,
+      "season_number": 2
+    },
+    {
+      "air_date": "1968-01-05",
+      "episode_count": 7,
+      "id": 1685,
+      "name": "Series 3",
+      "overview": "",
+      "poster_path": null,
+      "season_number": 3
+    },
+    {
+      "air_date": "1972-09-13",
+      "episode_count": 6,
+      "id": 1689,
+      "name": "Series 4",
+      "overview": "",
+      "poster_path": null,
+      "season_number": 4
+    },
+    {
+      "air_date": "1974-01-02",
+      "episode_count": 7,
+      "id": 1686,
+      "name": "Series 5",
+      "overview": "",
+      "poster_path": null,
+      "season_number": 5
+    },
+    {
+      "air_date": "1975-01-08",
+      "episode_count": 6,
+      "id": 1687,
+      "name": "Series 6",
+      "overview": "",
+      "poster_path": null,
+      "season_number": 6
+    },
+    {
+      "air_date": "1975-11-05",
+      "episode_count": 6,
+      "id": 1691,
+      "name": "Series 7",
+      "overview": "",
+      "poster_path": null,
+      "season_number": 7
+    }
+  ],
+  "spoken_languages": [
+    {
+      "english_name": "English",
+      "iso_639_1": "en",
+      "name": "English"
+    }
+  ],
+  
+
+
+
+
+  Website Media LinksThere are several ways to construct direct links to media on the Trakt website. The website itself uses slugs so the URLs are more readable.
+Type  URL
+movie /movies/:slug
+show  /shows/:slug
+season  /shows/:slug/seasons/:num
+episode /shows/:slug/seasons/:num/episodes/:num
+person  /people/:slug
+comment /comments/:id
+list  /lists/:id
+
+
+
+
+
+
+{
+  lastName: "Ben Lahmed",
+  firstName: "Fares",
+  email:"fares@gmail.com",
+  age:26,
+},
+{
+  lastName: "Kefi",
+  firstName: "Seif",
+  email:"kefi@gmail.com",
+  age:15,
+},
+{
+  lastName: "Fatnassi",
+  firstName: "Sarra",
+  email:"sarra.f@gmail.com",
+  age:40,
+},
+{
+  lastName: "Ben Yahya",
+  firstName: "Rym",
+  email:"",
+  age:4,
+},
+{
+  lastName: "Cherif",
+  firstName: "Sami",
+  email:"",
+  age:3,
+},

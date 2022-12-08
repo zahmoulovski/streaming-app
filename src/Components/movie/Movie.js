@@ -1,11 +1,10 @@
 import React, {useState,useEffect} from 'react';
 import MovieList from './MovieList';
-import Filtring from '../search/Filtring.js';
 import { movie } from '../data/Data';
 import "../styles.css";
 
 
-function Movie(){
+function Movies(){
   const [list,setList] = useState(movie);
   const [filterVideos] = useState(list);
   return(
@@ -15,4 +14,4 @@ function Movie(){
       );
 }
 
-export default Movie;
+export default Movies;

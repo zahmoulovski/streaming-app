@@ -12,12 +12,12 @@ const NavBar = () => {
             <img src='/image/logo-black.png' className='logo' alt="logo"/>
         </li>
         </Link>
-        <Link to="/movie">
+        <Link to="/movies">
         <li>
             Movies
         </li>
         </Link>
-        <Link to="/tvshow">
+        <Link to="/tvshows">
         <li>
             TV Show
         </li>

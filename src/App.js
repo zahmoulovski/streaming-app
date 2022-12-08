@@ -2,11 +2,11 @@ import React from 'react'
 import { Route,Routes } from 'react-router-dom'
 import HomeApp from './Components/HomeApp'
 import NavBar from './Navbar'
-import Trailer from './Trailer'
 import Movie from './Components/movie/Movie'
 import Tvshow from './Components/tvshow/Tvshow'
-import Stream from './Stream'
 import Search from './Components/search/Search'
+import Info from './Info'
+import Watch from './Watch'
 
 function App() {
   return (
@@ -15,10 +15,10 @@ function App() {
         <Routes>
             <Route path='/' element={<HomeApp/>} />
             <Route path='/search' element={<Search/>}/>
-            <Route path='/movie' element={<Movie/>}/>
-            <Route path='/tvshow' element={<Tvshow/>}/>
-            <Route path='/trailer/:id' element={<Trailer/>}/>
-            <Route path='/watch/:id' element={<Stream/>}/>
+            <Route path='/movies' element={<Movie/>}/>
+            <Route path='/tvshows' element={<Tvshow/>}/>
+            <Route path='/info/:id' element={<Info/>}/>
+            <Route path='/watch/:id' element={<Watch/>}/>
         </Routes>
         
     </div>

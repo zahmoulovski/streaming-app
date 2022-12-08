@@ -1,5 +1,5 @@
 import React, {useState,useEffect} from 'react';
-import MovieList from './MovieList';
+import SearchList from './SearchList';
 import Filtring from '../search/Filtring.js';
 import { tvshow } from '../data/Data';
 import "../styles.css";
@@ -19,7 +19,7 @@ function Search(){
   return(
     <div>
       <Filtring filter={filter}/>
-      <MovieList list={filterVideos} />
+      <SearchList list={filterVideos} />
     </div>
       );
 }

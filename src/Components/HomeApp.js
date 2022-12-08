@@ -1,5 +1,5 @@
 import React, {useState,useEffect} from 'react';
-import MovieList from './MovieList.js';
+import ItemList from './ItemList.js';
 import { info } from './data/Data';
 import "./styles.css";
 
@@ -8,7 +8,7 @@ function HomeApp(){
   const [filterVideos] = useState(list);
   return(
     <div>
-      <MovieList list={filterVideos} />
+      <ItemList list={filterVideos} />
     </div>
       );
 }

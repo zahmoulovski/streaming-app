@@ -1,19 +1,72 @@
-// {
-//   id: "1",
-//   title: "Maleficent",
-//   slug: "maleficent",
-//   streamingCode: "6h60ntc0hncz",
-//   poster: "/image/Maleficent.jpg",
-//   background: "/image/fanart/bg.jpg",
-//   genre: "Movie",
-//   year: "2023",
-//   runtime:"2h11m",
-//   rating: 4,
-//   description:
-//     "A vengeful fairy curses an infant princess, but that child may be the one person who can restore peace to their troubled land.",
-//   trailer: "https://www.youtube.com/watch?v=H5sZnSFfMos",
-// },
 
+export const newdatamovie=[
+{
+  id: "1",
+  title: "Maleficent",
+  slug: "maleficent",
+  streamingcode: "6h60ntc0hncz",
+  poster: "/image/Maleficent.jpg",
+  background: "/image/fanart/bg.jpg",
+  genre: "Movie",
+  year: "2023",
+  runtime:"2h11m",
+  rating: 4,
+  description:
+    "A vengeful fairy curses an infant princess, but that child may be the one person who can restore peace to their troubled land.",
+  trailer: "https://www.youtube.com/watch?v=H5sZnSFfMos",
+  director: "Tarantino"
+},
+];
+
+export const newdataserie=[
+  {
+    id: "2",
+    title: "Arcane",
+    slug: "arcane",
+    streamingcode: "6h60ntc0hncz",
+    poster: "/image/arcane.jpg",
+    background: "/image/fanart/bg.jpg",
+    genre: "TV Show",
+    year: "2021",
+    runtime:"50m",
+    rating: 9.5,
+    description:
+      "A vengeful fairy curses an infant princess, but that child may be the one person who can restore peace to their troubled land.",
+    trailer: "https://www.youtube.com/watch?v=H5sZnSFfMos",
+    director: "Tarantino",
+    seasons: [
+      {
+        seasonNum: "1",
+        episodes:[
+          {
+            airDate: "1965-07-22",
+            episodeCount: "1",
+            id: "1692",
+            name: "Specials",
+            slug: "s01e01",
+            streamingcode: "6h60ntc0hncz"
+          },
+          {
+            airDate: "1965-07-22",
+            episodeCount: "2",
+            id: "1693",
+            name: "Specials",
+            slug: "s01e02",
+            streamingcode: "6h60ntc0hncz"
+            },
+            {
+              airDate: "1965-07-22",
+              episodeCount: "3",
+              id: "1693",
+              name: "Specials",
+              slug: "s01e03",
+              streamingcode: "6h60ntc0hncz"
+              },
+        ],
+      },
+    ],
+  },
+];
 
 
 
