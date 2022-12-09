@@ -1,10 +1,10 @@
 import React, {useState,useEffect} from 'react';
 import TvshowList from './TvshowList';
-import { tvshow } from '../data/Data';
+import { datamovie } from '../data/Data';
 import "../styles.css";
 
 function Tvshows(){
-  const [list,setList] = useState(tvshow);
+  const [list,setList] = useState(datamovie);
   const [filterVideos] = useState(list);
   return(
     <div>

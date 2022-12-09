@@ -1,12 +1,12 @@
 import React, {useState,useEffect} from 'react';
 import SearchList from './SearchList';
 import Filtring from '../search/Filtring.js';
-import { tvshow } from '../data/Data';
+import { datamovie } from '../data/Data';
 import "../styles.css";
 
 function Search(){
   
-  const [list,setList] = useState(tvshow);
+  const [list,setList] = useState(datamovie);
   const [filterVideos, setfilterVideos] = useState(list);
   const [keyword, setKeyword] = useState("");
 

@@ -2,12 +2,12 @@ import React from 'react';
 import {useParams} from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import {info} from './data/Data';
+import {datamovie} from './data/Data';
 import YoutubeEmbed from './YoutubeID';
 
 function MyVerticallyCenteredModal(props) {
   const {id}=useParams()
-  const filmID=info.find((e)=>e.id==id)
+  const filmID=datamovie.find((e)=>e.id==id)
   return (
     <Modal
       {...props}
@@ -35,7 +35,7 @@ function YtModal() {
 
   return (
     <>
-      <Button variant="danger" onClick={() => setModalShow(true)}>
+      <Button variant="outline-danger" onClick={() => setModalShow(true)}>
       ▶ Trailer 
       </Button>
 

@@ -11,10 +11,8 @@ export default function SearchCard({ele}) {
                     <div className="col-12">
                         <div className="card-deck">
                         <Link to={`/info/${ele.id}`} >
-                            <div className="card text-white"><img className="poster" src={ele.img} alt="Poster" />
-                                <div className="card-img-overlay card-text">
-                                    <h2 className="title">{ele.title}</h2>
-                                    <p className="genre">{ele.year} - {ele.genre}</p>
+                            <div className="card text-white"><img className="poster" src={ele.poster} alt="Poster" />
+                                <div>
                                     <p className="spanRate">{ele.rating} ⭐</p>                               
                                 </div>
                             </div></Link>

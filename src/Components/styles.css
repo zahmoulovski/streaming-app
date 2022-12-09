@@ -33,6 +33,10 @@
 }
 .MovieCard {
   width: 15%;
+  transition: all .2s ease-in-out;
+}
+.MovieCard:hover {
+  transform: scale(105%);
 }
 .MovieList {
   display: flex;
@@ -44,6 +48,8 @@
 .card {
   overflow: hidden;
   position: relative;
+  background-color: #ffffff00;
+  border-radius: 5%;
 }
 a {
   color: #10171d;
@@ -59,74 +65,13 @@ body.dark-mode a {
 body.dark-mode a:hover{
   color: #068;
 }
-.card-img-overlay {
-  transform: translateY(13rem);
-  transition: transform .18s ease-in;
-  top: 40px;
-  right: 0;
-  bottom: 0;
-  left: 0
-}
-.card-img-overlay .btn {
-  opacity: 0;
-  transform: translateY(2rem)
-}
-.card-img-overlay .card-text {
-  opacity: 0;
-  transform: translateY(-6rem);
-  transition: opacity .05s ease-in,transform .25s ease-in
-}
-.card:hover .btn {
-  opacity: 1;
-  transform: translateX(0);
-  transition: opacity .7s ease-out,transform .35s ease-out
-}
-.card:hover .card-img {
-  mix-blend-mode: overlay
-}
-.card:hover .card-img-overlay {
-  transform: translateY(0);
-  transition: transform .25s ease-out;
-  background-color: rgba(0,0,0,.677)
-}
-.card:hover .card-text {
-  opacity: 1;
-  transform: translateX(0);
-  transition: opacity .5s ease-out,transform .2s ease-out
-}
-.content {
-  max-width: 600px;
-  font-size: 20px;
-  line-height: 1.3em;
-  margin: 60px auto 0;
-  padding: 20px
-}
-.content a {
-  text-decoration: none;
-  color: #068
-}
-.content button {
-  color: #068;
-  background-color: transparent;
-  border: none;
-  font-size: 1em;
-  padding: 0
-}
-.content code {
-  background-color: #cbe9ff;
-  border-radius: 2px;
-  font-size: 1em;
-  padding: 0 5px
-}
-.content h1 {
-  font-size: 2rem
-}
-.content img {
-  width: 100%
-}
 h1 {
-  font-size: 18px;
-  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
+}
+h2 {
+  font-size: 28px;
+  font-weight: 100;
 }
 .dark-mode-toggle > button {
   font-size: 1.2em;
@@ -187,8 +132,17 @@ h1 {
 .spanRate {
   color: #ffc800;
   font-weight: 700;
-  font-size: 10px;
-  vertical-align: baseline
+  font-size: 24px;
+  vertical-align: baseline;
+  position: absolute;
+  top: 8px;
+  right: 9px;
+}
+.spanrate {
+  color: #ffc800;
+  font-weight: 700;
+  font-size: 24px;
+  vertical-align: baseline;
 }
 .title {
   font-size: 14px;
@@ -207,15 +161,14 @@ h1 {
   background-repeat: no-repeat;
   overflow: hidden;
   position: fixed;
-  background-blend-mode: soft-light;
+  background-blend-mode: color;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
-  align-content: space-between
+  justify-content: center !important;
 }
 .trailerposter {
-  width: 200px
+  width: 80%;
 }
 .ulContainer {
   display: flex;
@@ -224,12 +177,6 @@ h1 {
   align-items: center;
   list-style: none;
   margin: 0
-}
-.video-responsive {
-  overflow: hidden;
-  padding-bottom: 56.25%;
-  position: relative;
-  height: 0
 }
 .video-responsive iframe {
   left: 0;
@@ -286,12 +233,24 @@ button.btn.btn-primary {
 button.btn.btn-primary.mb-3 {
   margin: 0 0 0 15px
 }
-button.btn.btn-secondary {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  float: right;
-  z-index: 10
+a.btn.btn-outline-warning {
+  margin-left: 15px;
+  width: 15%;
+}
+button.btn.btn-outline-danger {
+  margin-left: 15px;
+  margin-bottom: 15px;
+  width: 15%;
+}
+.btns {
+  display: flex;
+  flex-direction: column;
+}
+.modal-body {
+  position: revert;
+  flex: 1 1 auto;
+  padding: 1rem;
+  height: 40vh;
 }
 container.trailer {
   background-color: #ffffffcf;
@@ -307,8 +266,19 @@ container.trailer {
   flex-direction: column;
   align-items: center;
 }
-.rightSide{
+.rightSide {
   width: 60%;
+  line-height: 30px;
+}
+.stream {
+  width: 100%;
+  height: fit-content;
+}
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 0;
+  position: static;
+  height: 0;
 }
 h6 {
   margin-right: 120px
@@ -354,7 +324,20 @@ span {
   font-size: 35px;
   overflow: hidden
 }
-
+.innerinfo {
+  display: flex;
+  align-items: center;
+}
+.rightinfo {
+  margin-left: 25px;
+  line-height: 5px;
+}
+.postermobil{
+  display: none;
+}
+.btnsmobil{
+  display: none;
+}
   }
 
 
@@ -477,63 +460,14 @@ input[type=checkbox].dmcheck:focus-visible {
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin-top: 25px;
-  gap: 10px;
+  gap: 5px;
 }
 .MovieCard {
   width: 45%;
+  transition: all .2s ease-in-out;
 }
-.card-img-overlay {
-  transform: translateY(13rem);
-  transition: transform .18s ease-in;
-  top: 60px;
-  right: 0;
-  bottom: 0;
-  left: 0
-}
-.card-img-overlay .btn {
-  opacity: 0;
-  transform: translateY(2rem)
-}
-.card-img-overlay .card-text {
-  opacity: 0;
-  transform: translateY(-6rem);
-  transition: opacity .05s ease-in,transform .25s ease-in
-}
-.card:hover .btn {
-  opacity: 1;
-  transform: translateX(0);
-  transition: opacity .7s ease-out,transform .35s ease-out
-}
-.card:hover .card-img {
-  mix-blend-mode: overlay
-}
-.card:hover .card-img-overlay {
-  transform: translateY(0);
-  transition: transform .25s ease-out;
-  background-color: rgba(0,0,0,.677)
-}
-.card:hover .card-text {
-  opacity: 1;
-  transform: translateX(0);
-  transition: opacity .5s ease-out,transform .2s ease-out
-}
-.content {
-  max-width: 600px;
-  font-size: 20px;
-  line-height: 1.3em;
-  margin: 60px auto 0;
-  padding: 20px
-}
-.content a {
-  text-decoration: none;
-  color: #068
-}
-.content button {
-  color: #068;
-  background-color: transparent;
-  border: none;
-  font-size: 1em;
-  padding: 0
+.MovieCard:hover {
+  transform: scale(105%);
 }
 .card-img-overlay.card-text {
   opacity: 0;
@@ -554,18 +488,74 @@ img.trailerposter {
 .modal-content {
   width: -webkit-fill-available;
 }
-.leftSide {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-}
 .rightSide {
   padding: 20px;
 }
 h1 {
-  font-size: 18px;
-  text-align: center;
+  font-size: 26px;
+  font-weight: 600;
+}
+.spanRate {
+  color: #ffc800;
+  font-weight: 700;
+  font-size: 24px;
+  vertical-align: baseline;
+  position: absolute;
+  top: 8px;
+  right: 9px;
+}
+.btn-warning {
+  width: 90%;
+  margin: 0 5%;
+  border-radius: 50px;
+}
+.btn-outline-danger {
+  width: 50%;
+  margin: 0 25%;
+  border-radius: 50px;
+  margin-bottom: -30px;
+}
+.btnsmobil {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 10px;
+  gap: 10px;
+  top: -24px;
+  position: relative;
+}
+.trailerposter{
+  display: none;
+}
+
+.btns{
+  display: none;
+}
+.spanrate , .rightinfo{
+  display: none;
+}
+.postermobil{
+  width: 100%;
+}
+h2.spanratemobil {
+  position: absolute;
+  top: -40px;
+  margin-left: 20px;
+  font-size: 17px;
+  word-spacing: 15px;
+}
+iframe {
+  border: 0;
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+}
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  transform: rotate(90deg);
 }
 }
 
