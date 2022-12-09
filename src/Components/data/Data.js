@@ -33,57 +33,148 @@ export const datamovie = [
   trailer: "5MwW1NAsnR8",
   director: "Joachim Rønning"
 },
+{
+  title: "Snatch",
+  id: "snatch",
+  streamingcode: "u4wua91mi1rh",
+  poster: "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/56mOJth6DJ6JhgoE2jtpilVqJO.jpg",
+  backdrop: "https://www.themoviedb.org/t/p/original/kg6Dl2ldqG9CrtqH8OBViM3dvTU.jpg",
+  genre: "Movie",
+  year: "2000",
+  runtime:"1h 43m",
+  rating: 8.2,
+  videorate: "R",
+  description:
+    "Unscrupulous boxing promoters, violent bookmakers, a Russian gangster, incompetent amateur robbers and supposedly Jewish jewelers fight to track down a priceless stolen diamond.",
+  trailer: "ni4tEtuTccc",
+  director: "Guy Ritchie"
+},
+{
+  title: "Lock, Stock and Two Smoking Barrels",
+  id: "lock-stock-and-two-smoking-barrels",
+  streamingcode: "f6obmzzt23jf",
+  poster: "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/8kSerJrhrJWKLk1LViesGcnrUPE.jpg",
+  backdrop: "https://www.themoviedb.org/t/p/original/cXQH2u7wUIX1eoIdEj51kHXoWhX.jpg",
+  genre: "Movie",
+  year: "1998",
+  runtime:"1h 45m",
+  rating: 8.2,
+  videorate: "R",
+  description:
+    "A card shark and his unwillingly-enlisted friends need to make a lot of cash quick after losing a sketchy poker match. To do this they decide to pull a heist on a small-time gang who happen to be operating out of the flat next door.",
+  trailer: "HY7mRdQuUSw",
+  director: "Guy Ritchie"
+},
+{
+  title: "Batman and Superman: Battle of the Super Sons",
+  id: "batman-and-superman-battle-of-the-super-sons",
+  streamingcode: "zofu70icdgmb",
+  poster: "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/nBaVsNvUxIuvhPw3xTaAJIw8me4.jpg",
+  backdrop: "https://www.themoviedb.org/t/p/original/iQJ1gC2p6yn5wnBEklhPaEFJ3n1.jpg",
+  genre: "Movie",
+  year: "2022",
+  runtime:"1h 19m",
+  rating: 6.7,
+  videorate: "PG",
+  description:
+    "After discovering he has powers, 11-year-old Jonathan Kent and assassin-turned-Boy-Wonder Damian Wayne must join forces to rescue their fathers (Superman & Batman) and save the planet from the malevolent alien force known as Starro.",
+  trailer: "ZDPK7I5BD3g",
+  director: "Matt Peters"
+},
+{
+  title: "Arcane",
+  id: "arcane",
+  streamingcode: "6h60ntc0hncz",
+  poster: "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/fqldf2t8ztc9aiwn3k6mlX3tvRT.jpg",
+  backdrop: "https://www.themoviedb.org/t/p/original/vfM7CdJ05vKRs4QjY1oIzWGTn1P.jpg",
+  genre: "TV Show",
+  year: "2021",
+  runtime:"50m",
+  rating: 9.5,
+  description:
+    "A vengeful fairy curses an infant princess, but that child may be the one person who can restore peace to their troubled land.",
+  trailer: "fXmAurh012s",
+  director: "Tarantino",
+  seasoninfo:"1",
+  episodes:"9",
+  seasons: [
+    {
+      seasonNum: "1",
+      episodes:[
+        {
+          airDate: "1965-07-22",
+          episodeCount: "1",
+          name: "Specials",
+          slug: "s01e01",
+          streamingcode: "6h60ntc0hncz"
+        },
+        {
+          airDate: "1965-07-22",
+          episodeCount: "2",
+          name: "Specials",
+          slug: "s01e02",
+          streamingcode: "6h60ntc0hncz"
+          },
+          {
+            airDate: "1965-07-22",
+            episodeCount: "3",
+            name: "Specials",
+            slug: "s01e03",
+            streamingcode: "6h60ntc0hncz"
+            },
+      ],
+    },
+  ],
+},
 ];
 
-// export const newdataserie=[
-//   {
-//     id: "2",
-//     title: "Arcane",
-//     slug: "arcane",
-//     streamingcode: "6h60ntc0hncz",
-//     poster: "/image/arcane.jpg",
-//     backdrop: "/image/fanart/bg.jpg",
-//     genre: "TV Show",
-//     year: "2021",
-//     runtime:"50m",
-//     rating: 9.5,
-//     description:
-//       "A vengeful fairy curses an infant princess, but that child may be the one person who can restore peace to their troubled land.",
-//     trailer: "https://www.youtube.com/watch?v=H5sZnSFfMos",
-//     director: "Tarantino",
-//     seasons: [
-//       {
-//         seasonNum: "1",
-//         episodes:[
-//           {
-//             airDate: "1965-07-22",
-//             episodeCount: "1",
-//             id: "1692",
-//             name: "Specials",
-//             slug: "s01e01",
-//             streamingcode: "6h60ntc0hncz"
-//           },
-//           {
-//             airDate: "1965-07-22",
-//             episodeCount: "2",
-//             id: "1693",
-//             name: "Specials",
-//             slug: "s01e02",
-//             streamingcode: "6h60ntc0hncz"
-//             },
-//             {
-//               airDate: "1965-07-22",
-//               episodeCount: "3",
-//               id: "1693",
-//               name: "Specials",
-//               slug: "s01e03",
-//               streamingcode: "6h60ntc0hncz"
-//               },
-//         ],
-//       },
-//     ],
-//   },
-// ];
+export const dataserie=[
+  {
+    title: "Arcane",
+    id: "arcane",
+    streamingcode: "6h60ntc0hncz",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/fqldf2t8ztc9aiwn3k6mlX3tvRT.jpg",
+    backdrop: "https://www.themoviedb.org/t/p/original/vfM7CdJ05vKRs4QjY1oIzWGTn1P.jpg",
+    genre: "TV Show",
+    year: "2021",
+    runtime:"50m",
+    rating: 9.5,
+    description:
+      "A vengeful fairy curses an infant princess, but that child may be the one person who can restore peace to their troubled land.",
+    trailer: "fXmAurh012s",
+    director: "Tarantino",
+    seasoninfo:"1",
+    episodes:"9",
+    seasons: [
+      {
+        seasonNum: "1",
+        episodes:[
+          {
+            airDate: "1965-07-22",
+            episodeCount: "1",
+            name: "Specials",
+            slug: "s01e01",
+            streamingcode: "6h60ntc0hncz"
+          },
+          {
+            airDate: "1965-07-22",
+            episodeCount: "2",
+            name: "Specials",
+            slug: "s01e02",
+            streamingcode: "6h60ntc0hncz"
+            },
+            {
+              airDate: "1965-07-22",
+              episodeCount: "3",
+              name: "Specials",
+              slug: "s01e03",
+              streamingcode: "6h60ntc0hncz"
+              },
+        ],
+      },
+    ],
+  },
+];
 
 
 

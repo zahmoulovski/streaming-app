@@ -5,8 +5,10 @@ import NavBar from './Navbar'
 import Movie from './Components/movie/Movie'
 import Tvshow from './Components/tvshow/Tvshow'
 import Search from './Components/search/Search'
+import Tvshowinfo from './Components/tvshow/Tvshowinfo'
 import Info from './Info'
 import Watch from './Watch'
+
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
             <Route path='/movies' element={<Movie/>}/>
             <Route path='/tvshows' element={<Tvshow/>}/>
             <Route path='/info/:id' element={<Info/>}/>
+            <Route path='/tvinfo/:id' element={<Tvshowinfo/>}/>
             <Route path='/watch/:id' element={<Watch/>}/>
         </Routes>
         

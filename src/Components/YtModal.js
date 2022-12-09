@@ -7,6 +7,7 @@ import YoutubeEmbed from './YoutubeID';
 
 function MyVerticallyCenteredModal(props) {
   const {id}=useParams()
+
   const filmID=datamovie.find((e)=>e.id==id)
   return (
     <Modal

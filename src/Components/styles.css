@@ -338,6 +338,10 @@ span {
 .btnsmobil{
   display: none;
 }
+img.poster:hover {
+  filter: brightness(40%);
+  -webkit-filter: brightness(40%);
+}
   }
 
 
@@ -558,6 +562,10 @@ iframe {
 }
 .stream{
   background-color: black;
+}
+img.poster:hover {
+  filter: brightness(40%);
+  -webkit-filter: brightness(40%);
 }
 }
 

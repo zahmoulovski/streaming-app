@@ -10,7 +10,7 @@ export default function TvshowCard({ele}) {
                 <div className="row">
                     <div className="col-12">
                         <div className="card-deck">
-                        <Link to={`/info/${ele.id}`} >
+                        <Link to={`/tvinfo/${ele.id}`} >
                             <div className="card text-white"><img className="poster" src={ele.poster} alt="Poster" />
                                 <div>
                                     <p className="spanRate">{ele.rating} ⭐</p>                               
