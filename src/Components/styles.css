@@ -555,7 +555,9 @@ iframe {
   height: 100vh;
   width: 100vw;
   position: absolute;
-  transform: rotate(90deg);
+}
+.stream{
+  background-color: black;
 }
 }
 
